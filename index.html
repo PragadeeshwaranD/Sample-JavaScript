@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        #com{
+            width:100px;
+            height:100px;
+            border:2px solid black;
+            margin-left:50px;
+            margin-right: 50px;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 6vw;
+        }
+        .com1{
+            display:flex;
+            height:50vh;
+            align-items: center;
+            justify-content: center;
+            margin-top:15%;
+            background-color: antiquewhite;
+        }
+        *{
+            background-color: aqua;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <h1 style="text-align: center">Simple Javascript Program</h1>
+    <div class="com1">
+        <button onclick="up()" style="height:100px">Up</button>
+        <div ID="com">3</div>
+        <button onclick="down()" style="height:100px">Down</button>
+    </div>
+    <script>
+        let a=0;
+        function up(){
+            a+=1;
+            document.getElementById('com').innerHTML=a;
+        }
+
+        function down(){
+            a-=1;
+            document.getElementById('com').innerHTML=a;
+        }
+
+        const product={
+            name:'bulb',
+            salary:'1000'
+        }
+        console.log(product['name']);
+        let e=product.name1='pragadeesh';
+        console.log(JSON.stringify(product));
+        const d=JSON.stringify(product);
+        console.log(JSON.parse(d));
+        localStorage.setItem('product','product');
+        localStorage.getItem('product');
+
+    </script>
+</body>
+</html>
